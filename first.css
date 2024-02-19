@@ -1,0 +1,1008 @@
+
+body {
+    height: auto; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+header {
+    background: transparent; /* Dark blue to faint blue gradient */
+    border-bottom:1px solid #fff;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(13, 71, 161, 0.8);
+    animation: blinkBorder 0.4s infinite alternate; 
+    
+}
+@keyframes blinkBorder {
+    from {
+        border-color: #fff; /* Initial border color */
+    }
+    to {
+        border-color: #0D47A1; /* Blinking color (dark blue) */
+    }
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+    
+}
+.gm{
+    display: inline-flex;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-left:-80px;
+    padding: 10px;
+}
+.gm img{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid transparent; /* Initial border color */
+    /* Fixed position */
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    animation: blinkBorder 0.4s infinite alternate;
+}
+
+li img{
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid transparent; /* Initial border color */
+    /* Fixed position */
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    animation: blinkBorder 0.4s infinite alternate;
+    
+}
+@keyframes blinkBorder {
+    from {
+        border-color: transparent; /* Initial border color */
+    }
+    to {
+        border-color: #0D47A1; /* Blinking color (dark blue) */
+    }
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: rotateLogo 2s infinite linear;
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFC107; /* Yellow color for the name */
+    
+}
+
+
+
+
+.portfolio {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    animation: fadeInUp 1s ease-in-out;
+    
+}
+
+.portfolio li {
+    margin-right: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpItem 1s ease-in-out forwards;
+    
+  
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpItem {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.portfolio a:hover {
+    color: #FF5722; /* Orange color on hover */
+    transform: scale(1.1);
+}
+
+.portfolio a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #FFEB3B; /* Yellow color for the underline */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.portfolio a:hover::before {
+    width: 100%;
+    left: 0;
+}
+.Me {
+    position: absolute;
+    left: 70px; /* Adjust the left value as needed */
+    top: 60%; /* Adjust the top value as needed */
+    transform: translateY(-50%);
+    
+}
+
+.Me img {
+    width: 10cm; /* Set the width of the image */
+    height: 10cm; /* Set the height of the image */
+    border-radius: 50%; /* Create a circular shape */
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px rgba(173, 216, 230, 0.8), 0 0 40px rgba(173, 216, 230, 0.6), 0 0 60px rgba(173, 216, 230, 0.4), 0 0 80px rgba(255, 255, 255, 0.2); /* Optional: Add a white border around the image */
+    animation: glowAnimation 0.1s infinite alternate;
+}
+
+/* Add this to your existing CSS or create a new CSS file (e.g., styles.css) and link it in your HTML file */
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 20px rgba(173, 216, 230, 0.8), 0 0 40px rgba(173, 216, 230, 0.6), 0 0 60px rgba(173, 216, 230, 0.4), 0 0 80px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(173, 216, 230, 0), 0 0 40px rgba(173, 216, 230, 0), 0 0 60px rgba(173, 216, 230, 0), 0 0 80px rgba(255, 255, 255, 0);
+    }
+}
+
+.tag{
+    color:#FFEB3B;
+    font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  height: 800px;
+  width:550px;
+  margin-left: 600px;
+  margin-top: 100px;
+  text-shadow: 0 0 10px rgba(255, 235, 59, 0.8), 0 0 20px rgba(255, 235, 59, 0.6), 0 0 30px rgba(255, 235, 59, 0.4);
+  animation: blinkAnimation 1s infinite alternate; 
+  font-size: 1.5em;
+}
+/* ... Your existing styles ... */
+
+
+@keyframes blinkAnimation {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 235, 59, 0.8), 0 0 20px rgba(255, 235, 59, 0.6), 0 0 30px rgba(255, 235, 59, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 235, 59, 0), 0 0 20px rgba(255, 235, 59, 0), 0 0 30px rgba(255, 235, 59, 0);
+    }
+}
+.tp {
+
+    display: flex;
+    width: 900px;
+    height: 200px;
+    align-items: center;
+    position: absolute;
+    top: 600px;
+    left: 30px;
+}
+.tp img{
+    
+    margin:10px;
+    padding:10px;
+    height: 100px;
+    width: 100px ;
+    border: 2px solid transparent; /* Initial transparent border */
+    animation:  borderBlink 0.2s infinite alternate;
+}
+    
+
+
+
+@keyframes borderBlink {
+    0% {
+        border-color: transparent; /* Initial transparent border */
+    }
+    100% {
+        border-color: #2196F3; /* Blue border color */
+    }
+}
+.title{
+    color: white;
+    position: absolute;
+    top: -20px;
+    text-align: center;
+    left: 150px;
+    font-family: "Montserrat Alternates", sans-serif;
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+}
+@keyframes textBlink {
+    0%, 100% {
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.6), 0 0 30px rgba(0, 0, 255, 0.4);
+    }
+    50% {
+        color: #fff; /* Blinking white color */
+        text-shadow: 0 0 10px rgba(173, 216, 230, 0.8), 0 0 20px rgba(173, 216, 230, 0.6), 0 0 30px rgba(173, 216, 230, 0.4);
+    }
+}
+.title2{
+    color: white;
+    position: absolute;
+    top: 790px;
+    text-align: center;
+    left: 500px;
+    font-family: "Montserrat Alternates", sans-serif;
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+}
+.title3{
+    color: white;
+    position: absolute;
+    top: 1040px;
+    text-align: center;
+    left: 550px;
+    font-family: "Montserrat Alternates", sans-serif;
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+}
+
+@keyframes textBlink {
+    0%, 100% {
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(0, 0, 255, 0.6), 0 0 30px rgba(0, 0, 255, 0.4);
+    }
+    50% {
+        color: #fff; /* Blinking white color */
+        text-shadow: 0 0 10px rgba(173, 216, 230, 0.8), 0 0 20px rgba(173, 216, 230, 0.6), 0 0 30px rgba(173, 216, 230, 0.4);
+    }
+}
+
+ /* Your CSS code goes here */
+ .line-container {
+    margin-top: -100px;
+    width: 100%;
+    height: 2px;
+    background-color:transparent;
+    position: relative;
+    overflow: hidden;
+    height: 5px;
+    align-items: center;
+}
+
+.line {
+    width: 0;
+    height: 100%;
+    background-color: #bf1c1c;
+    position: absolute;
+    animation: drawLine 5s linear forwards;
+    color:#FF5722;
+    margin-left: 150px;
+}
+
+.line:nth-child(2n) {
+    background-color: #0D47A1; /* Change color for every 2nd line */
+}
+
+@keyframes drawLine {
+    0% {
+        width: 0;
+        background-color: #2196F3;
+    }
+    10% {
+        width: 1cm;
+        background-color: #2196F3;
+    }
+    40% {
+        width: 8cm;
+        background-color: rgb(41, 130, 199);
+    }
+    70% {
+        width: 16cm;
+        background-color: #165a87;
+    }
+    100% {
+        width: 24cm;
+        background-color: #006bad;
+    }
+    
+}
+
+.line.pause {
+    animation: none;
+    
+}
+.animation-container {
+    
+    width: 100px;
+    height: 20vh;
+    display:inline-flex;
+}
+
+.animated-div{
+    border-radius: 20%;
+    position: absolute;
+    top: 940px;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 120px;
+    border: 1px solid Blue;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 0s ease-in-out 0.5s forwards;
+    padding: 10px;
+}
+.animated-div img{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+}
+p{
+    font-size: 0.3cm;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.animated-div2{
+    border-radius: 20%;
+    position: absolute;
+    top: 940px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 120px;
+    border: 1px solid Blue;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 0s ease-in-out 2.0s forwards;
+    padding: 10px;
+}
+.animated-div2 img{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.animated-div3{
+    border-radius: 20%;
+    position: absolute;
+    top: 940px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 120px;
+    border: 1px solid Blue;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 0s ease-in-out 3.0s forwards;
+    padding: 10px;
+}
+.animated-div3 img{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.animated-div4{
+    border-radius: 20%;
+    position: absolute;
+    top: 940px;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 120px;
+    border: 1px solid Blue;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 0s ease-in-out 5s forwards;
+    padding: 10px;
+}
+.animated-div4 img{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+
+.techno img{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    animation: floatAnimation 2s infinite alternate;
+    
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+.techno{
+    border: 1px solid blue;
+    height: 230px;
+    width: 230px;
+    margin-top: 110px;
+    margin-left: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    border-top: none;
+    
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+    animation:  borderBlink 0.2s infinite alternate;
+}
+.f1{
+    position: relative;
+    float: left;
+}
+.f2{
+    position: relative;
+    float: right;
+}
+.f3{
+    
+    color:#fff;
+    position:relative;
+    left: 30%;
+}
+.techno2 img{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    animation: floatAnimation 2s infinite alternate;
+    
+    
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+.techno2{
+    border: 1px solid blue;
+    height: 230px;
+    width: 230px;
+    margin-top: -270px;
+    margin-left: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    border-top: none;
+    
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+    animation:  borderBlink 0.2s infinite alternate;
+}
+.b1{
+    position: relative;
+    float: left;
+    margin-top:-200px;
+}
+.b2{
+    position: relative;
+    float: right;
+    margin-top:-200px
+}
+.b3{
+    
+    color:#fff;
+    position:relative;
+    left: 30%;
+}
+.techno6 img{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    animation: floatAnimation 2s infinite alternate;
+    
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+.techno6{
+    border: 1px solid blue;
+    height: 230px;
+    width: 230px;
+    margin-top: 110px;
+    margin-left: 900px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    border-top: none;
+    
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+    animation:  borderBlink 0.2s infinite alternate;
+}
+.techno3 img{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    animation: floatAnimation 2s infinite alternate;
+    
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+.techno3{
+    border: 1px solid blue;
+    height: 230px;
+    width: 230px;
+    margin-top: -630px;
+    margin-left: 900px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    border-top: none;
+    
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+    animation:  borderBlink 0.2s infinite alternate;
+}
+.d1{
+    position: relative;
+    float: left;
+    margin-top:-550px;
+}
+.d2{
+    position: relative;
+    float: right;
+    margin-top:-550px
+}
+.techno4 img{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    animation: floatAnimation 2s infinite alternate;
+    
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+.techno4{
+    border: 1px solid blue;
+    height: 230px;
+    width: 230px;
+    margin-top: 110px;
+    margin-left: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    border-top: none;
+    
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+    animation:  borderBlink 0.2s infinite alternate;
+}
+
+.techno5 img{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    animation: floatAnimation 2s infinite alternate;
+    
+    
+}
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+.techno5{
+    border: 1px solid blue;
+    height: 230px;
+    width: 230px;
+    margin-top: -270px;
+    margin-left: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    border-top: none;
+    
+    animation: textBlink 1s infinite alternate;
+    text-shadow: #2196F3;
+    animation:  borderBlink 0.2s infinite alternate;
+}
+/* .spinner {
+    --R: 28px;
+    --g1: #474bff 96%, #0000;
+    --g2: #dbdcef 96%, #0000;
+    width: calc(2*var(--R));
+    height: calc(2*var(--R));
+    border-radius: 50%;
+    display: grid;
+    -webkit-mask: linear-gradient(#000 0 0);
+    animation: spinner-maxc6n 2s infinite linear;
+ }
+ 
+ .spinner::before,
+ .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    width: 50%;
+    background: radial-gradient(farthest-side,var(--g1)) calc(var(--R) + 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),
+         radial-gradient(farthest-side,var(--g1)) calc(var(--R) + 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),
+         radial-gradient(farthest-side,var(--g2)) calc(var(--R) + 0.5*var(--R)   - var(--R)) calc(var(--R) - 0.866*var(--R) - var(--R)),
+         radial-gradient(farthest-side,var(--g1)) 0 calc(-1*var(--R)),
+         radial-gradient(farthest-side,var(--g2)) calc(var(--R) - 0.5*var(--R)   - var(--R)) calc(var(--R) - 0.866*var(--R) - var(--R)),
+         radial-gradient(farthest-side,var(--g1)) calc(var(--R) - 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),
+         radial-gradient(farthest-side,var(--g2)) calc(-1*var(--R))  0,
+         radial-gradient(farthest-side,var(--g1)) calc(var(--R) - 0.866*var(--R) - var(--R)) calc(var(--R) + 0.5*var(--R)   - var(--R));
+    background-size: calc(2*var(--R)) calc(2*var(--R));
+    background-repeat: no-repeat;
+ }
+ 
+ .spinner::after {
+    transform: rotate(180deg);
+    transform-origin: right;
+ }
+ 
+ @keyframes spinner-maxc6n {
+    100% {
+       transform: rotate(-1turn);
+    }
+ } */
+ /* This is for Project Section */
+ .projects{
+    width: 1022px;
+    height:400px;
+    margin-top: 200px;
+   
+ }
+ .p1{
+    width: 280px;
+    height:360px;
+   color:aliceblue;
+    border-radius: 20px; 
+    border:1px solid greenyellow;
+    padding: 10px;
+    text-align: center;
+    animation: blink 1s infinite alternate;
+    
+ }
+ .projects img{
+    animation: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation: blink 1s infinite alternate;
+ }
+ .projects button{
+    height: 40px;
+    width: 140px;
+    background-color: black;
+    color:white;
+    border:1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: blink 1s infinite alternate;
+
+
+ }
+ .projects button:hover{
+    height: 45px;
+    width: 145px;
+    border:2px solid red;
+    color: #fff;
+ }
+ h1 {
+    animation: glow 1s infinite alternate; /* Glow animation for h1 inside hovered button */
+}
+
+.p1:hover {
+    animation: enlarge 0.5s ease forwards; /* Enlarge animation when cursor moves over .p1 */
+}
+ @keyframes blink {
+    0% {
+        box-shadow: 0 0 20px blue;
+    }
+    50% {
+        box-shadow: 0 0 40px blue;
+    }
+    100% {
+        box-shadow: 0 0 20px blue;
+    }
+}
+
+@keyframes enlarge {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 40px blue;
+    }
+    50% {
+        text-shadow: 0 0 80px blue;
+    }
+    100% {
+        text-shadow: 0 0 40px blue;
+    }
+}
+.pp2{
+    margin-left: 350px;
+    margin-top: -380px;
+}
+.pp3{
+    margin-left: 700px;
+    margin-top: -380px;
+}
+.p{
+    animation: glow 1s infinite alternate;
+    color: white;
+    text-size: 100px;
+    text-align: center;
+    margin-top: -100px;
+}
+.ct{
+    margin-top: -120px;
+}
+.ct1{
+    height:70px;
+    width:850px;
+    border:1px solid rgb(38, 123, 243);
+    color:aliceblue;
+    display: flex; /* Use flexbox */
+        flex-direction: row; /* Set the direction to horizontal */
+        padding: 10px;
+        text-align: center;
+        margin-top: 200px;
+        border-radius: 20px;
+        margin-left: 20%;
+        
+}
+.ct1 img{
+    animation: none;
+}
+.ct1 img,
+    .ct1 h3,
+    .ct1 button {
+        margin-right: 0.8cm; /* Set distance between elements */
+        height: 60px;
+    }
+    .ct1 h3{
+        margin-top:30px;
+    }
+    .ct1 button{
+        height: 45px;
+    width: 145px;
+    border-radius: 10px;;
+        margin-right: -700px;
+        border:2px solid red;
+     margin-top: 20px;
+    background-color: black;
+    }
+    .ct1 a{
+        text-decoration: none;
+        color:#fff;
+    }
+    .ct1 button:hover{
+        background-color: #bf1c1c;
+    }
+    .cct2,.cct3,.cct4,.cct5,.cct6{
+        margin-top: -150px;
+    }
+    .cct6 button{
+        width:220px;
+        margin-left: 300px;
+    }
+    @keyframes colorChange {
+        0% { background-color: #333; } /* Initial color */
+        100% { background-color: #000; } /* Final color */
+    }
+    
+    .ct1 {
+       
+        animation: glowEffect 1s linear infinite alternate;
+    }
+    @keyframes glowEffect {
+        0% { box-shadow: none; }
+        50% { box-shadow: 0 0 10px 5px rgba(38, 123, 243, 0.7); }
+        100% { box-shadow: none; }
+    }
+    .ct1{
+        animation: colorChange 0.2s linear infinite alternate;
+    }
+    .contact-form {
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 80px;
+        width:700px;
+        height: 300px;
+      }
+      
+      .contact-form h1 {
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+      }
+      
+      .form-group {
+        margin-bottom: 20px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 800px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+      }
+      
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      textarea:focus {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      
+      button[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 200px;
+        margin-left: 100px;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      button[type="submit"],
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        animation: blink 1s infinite;
+      }
+    .contact-form img{
+        animation: none;
+        margin-left: 100px;
+    }
+    .ctag h1{
+        color:white;
+        margin-top: 120px;
+        margin-left: 350px;
+    }
+    .contact-form button:hover{
+        background-color: #000;
+        color:white;
+        border:1px solid blue;
+    }
+    .contact-form h1{
+        margin-left: 100px;
+    }
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        width: 1240px;
+        margin-top: 150px;
+        margin-left: -110px;
+        padding: 10px;
+    }
+    .footer p{
+        margin-top: -20px;
+    }
+     .portfolio li:hover{
+        cursor: pointer;
+        width:90px;
+        height:90px;
+     }
